@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="debc6396-7737-45fd-817b-dc66da3cc8ec" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/translator/view/IconLoader.java" afterPath="$PROJECT_DIR$/src/main/java/translator/view/swing/IconLoader.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/translator/view/IconLocations.java" afterPath="$PROJECT_DIR$/src/main/java/translator/view/swing/IconLocations.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/translator/view/MotionLabel.java" afterPath="$PROJECT_DIR$/src/main/java/translator/view/swing/MotionLabel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/translator/view/ViewImpl.java" afterPath="$PROJECT_DIR$/src/main/java/translator/view/swing/ViewSwing.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/translator/application/EntryPoint.java" afterPath="$PROJECT_DIR$/src/main/java/translator/application/EntryPoint.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -46,7 +42,6 @@
         <option value="$PROJECT_DIR$/src/main/java/translator/view/View.java" />
         <option value="$PROJECT_DIR$/src/main/java/translator/controller/Controller.java" />
         <option value="$PROJECT_DIR$/src/main/java/translator/controller/ControllerImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/translator/application/EntryPoint.java" />
         <option value="$PROJECT_DIR$/src/test/java/translator/controller/ControllerImplTest.java" />
         <option value="$PROJECT_DIR$/.idea/compiler.xml" />
         <option value="$PROJECT_DIR$/translatorbin.iml" />
@@ -61,6 +56,7 @@
         <option value="$PROJECT_DIR$/src/main/java/translator/view/swing/IconLoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/translator/view/swing/IconLocations.java" />
         <option value="$PROJECT_DIR$/src/main/java/translator/view/swing/MotionLabel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/translator/application/EntryPoint.java" />
       </list>
     </option>
   </component>
@@ -141,15 +137,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="translator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-translator-bin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-translator-bin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="translator" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -618,14 +605,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/translator/application/EntryPoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/translator/controller/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -693,6 +672,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/translator/application/EntryPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
           <folding />
         </state>
       </provider>
