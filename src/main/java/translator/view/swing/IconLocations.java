@@ -1,6 +1,6 @@
-package translator.view;
+package translator.view.swing;
 
-public class IconLocations {
+class IconLocations {
 
     static final String CLOSE_ICON = "/images/close.png";
     static final String MINI_ICON = "/images/mini.png";

@@ -1,6 +1,7 @@
-package translator.view;
+package translator.view.swing;
 
 import translator.controller.Controller;
+import translator.view.View;
 
 import javax.swing.*;
 
@@ -8,7 +9,7 @@ import static javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS;
 
 import java.awt.*;
 
-public class ViewImpl extends JFrame implements View {
+public class ViewSwing extends JFrame implements View {
 
     private static final String TITLE_APP = "  Translation of Binary to Text";
     private static final int W_FRAME = 900;
@@ -18,7 +19,7 @@ public class ViewImpl extends JFrame implements View {
     private JButton toBinaryButton;
     private JButton toAnciiButton;
 
-    public ViewImpl() {
+    public ViewSwing() {
         super(TITLE_APP);
         setSize(W_FRAME, H_FRAME);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);

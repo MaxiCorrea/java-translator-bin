@@ -1,4 +1,4 @@
-package translator.view;
+package translator.view.swing;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -12,7 +12,7 @@ import javax.swing.Icon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-public class MotionLabel extends JLabel {
+class MotionLabel extends JLabel {
 
     private static final long serialVersionUID = 1L;
 
@@ -25,7 +25,7 @@ public class MotionLabel extends JLabel {
     private JLabel close;
     private JFrame mainFrame;
 
-    public MotionLabel(JFrame mainFrame) {
+    MotionLabel(JFrame mainFrame) {
         super(mainFrame.getTitle(), JLabel.LEFT);
         this.mainFrame = mainFrame;
         mainFrame.setTitle(mainFrame.getTitle());

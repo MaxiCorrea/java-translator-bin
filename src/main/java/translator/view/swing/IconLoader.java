@@ -1,14 +1,15 @@
-package translator.view;
+package translator.view.swing;
+
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 
-public class IconLoader {
+class IconLoader {
 
     private IconLoader() {
         throw new AssertionError("IconLoader is a utility class.");
     }
 
-    public static Icon load(String path) {
+    static Icon load(String path) {
         return new ImageIcon(IconLoader.class.getClass().getResource(path));
     }
 
