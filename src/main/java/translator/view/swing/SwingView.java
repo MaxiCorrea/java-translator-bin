@@ -9,7 +9,7 @@ import static javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS;
 
 import java.awt.*;
 
-public class ViewSwing extends JFrame implements View {
+public class SwingView extends JFrame implements View {
 
     private static final String TITLE_APP = "  Translation of Binary to Text";
     private static final int W_FRAME = 900;
@@ -19,7 +19,7 @@ public class ViewSwing extends JFrame implements View {
     private JButton toBinaryButton;
     private JButton toAnciiButton;
 
-    public ViewSwing() {
+    public SwingView() {
         super(TITLE_APP);
         setSize(W_FRAME, H_FRAME);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -40,8 +40,10 @@ public class ViewSwing extends JFrame implements View {
         JPanel pane = new JPanel();
         textArea = new JTextArea();
         int width = W_FRAME -40;
-        int height = H_FRAME -20;
+        int height = H_FRAME -30;
         Dimension size = new Dimension(width,height);
+        Font font = textArea.getFont();
+        textArea.setFont(font.deriveFont(24f));
         textArea.setPreferredSize(size);
         textArea.setWrapStyleWord(true);
         textArea.setLineWrap(true);
@@ -53,9 +55,18 @@ public class ViewSwing extends JFrame implements View {
 
     private void addSouthPane() {
         JPanel pane = new JPanel();
+        pane.setBackground(Color.BLUE);
         toBinaryButton = new JButton("Text to Binary");
+        toBinaryButton.setBackground(Color.WHITE);
+        toBinaryButton.setBorderPainted(false);
+        toBinaryButton.setFocusPainted(false);
+        toBinaryButton.setForeground(Color.BLUE);
         pane.add(toBinaryButton);
         toAnciiButton = new JButton("Binary to Text");
+        toAnciiButton.setBackground(Color.WHITE);
+        toAnciiButton.setForeground(Color.BLUE);
+        toAnciiButton.setBorderPainted(false);
+        toAnciiButton.setFocusPainted(false);
         pane.add(toAnciiButton);
         add(pane , BorderLayout.SOUTH);
     }
