@@ -18,6 +18,7 @@ public class SwingView extends JFrame implements View {
     private JTextArea textArea;
     private JButton toBinaryButton;
     private JButton toAnciiButton;
+    private JLabel githubLabel;
 
     public SwingView() {
         super(TITLE_APP);
@@ -33,15 +34,15 @@ public class SwingView extends JFrame implements View {
         JPanel pane = new JPanel();
         pane.setBackground(Color.BLUE);
         pane.add(new MotionLabel(this));
-        add(pane,BorderLayout.NORTH);
+        add(pane, BorderLayout.NORTH);
     }
 
     private void addCenterPane() {
         JPanel pane = new JPanel();
         textArea = new JTextArea();
-        int width = W_FRAME -40;
-        int height = H_FRAME -30;
-        Dimension size = new Dimension(width,height);
+        int width = W_FRAME - 40;
+        int height = H_FRAME - 30;
+        Dimension size = new Dimension(width, height);
         Font font = textArea.getFont();
         textArea.setFont(font.deriveFont(24f));
         textArea.setPreferredSize(size);
@@ -68,7 +69,7 @@ public class SwingView extends JFrame implements View {
         toAnciiButton.setBorderPainted(false);
         toAnciiButton.setFocusPainted(false);
         pane.add(toAnciiButton);
-        add(pane , BorderLayout.SOUTH);
+        add(pane, BorderLayout.SOUTH);
     }
 
     @Override

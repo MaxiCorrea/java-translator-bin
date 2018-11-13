@@ -15,7 +15,7 @@ public class EntryPoint {
         controller.start();
     }
 
-    static View selectViewFromCommandLine(String... args) {
+    private static View selectViewFromCommandLine(String... args) {
         if(args.length > 0 ) {
             String arg = args[0];
             if(arg.equals("-c")) {
