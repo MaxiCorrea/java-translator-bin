@@ -18,7 +18,6 @@ public class SwingView extends JFrame implements View {
     private JTextArea textArea;
     private JButton toBinaryButton;
     private JButton toAnciiButton;
-    private JLabel githubLabel;
 
     public SwingView() {
         super(TITLE_APP);
@@ -51,6 +50,7 @@ public class SwingView extends JFrame implements View {
         pane.add(textArea);
         JScrollPane scroll = new JScrollPane(pane);
         scroll.setVerticalScrollBarPolicy(VERTICAL_SCROLLBAR_ALWAYS);
+        scroll.setBorder(BorderFactory.createTitledBorder("Text in binary or in ASCII"));
         add(scroll, BorderLayout.CENTER);
     }
 
