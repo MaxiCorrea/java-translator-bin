@@ -17,10 +17,11 @@ public class EntryPoint {
 
     static View selectViewFromCommandLine(String... args) {
         if(args.length > 0 ) {
-            if(args[0].equals("-c")) {
+            String arg = args[0];
+            if(arg.equals("-c")) {
                 return new ConsoleView();
             }
-            if(args[1].equals("-s")) {
+            if(arg.equals("-s")) {
                 return new SwingView();
             }
         }
