@@ -10,7 +10,7 @@ import java.awt.*;
 
 public class ViewImpl extends JFrame implements View {
 
-    private static final String TITLE_APP = "Translation of Binary to Text";
+    private static final String TITLE_APP = "  Translation of Binary to Text";
     private static final int W_FRAME = 900;
     private static final int H_FRAME = 500;
 
@@ -25,16 +25,20 @@ public class ViewImpl extends JFrame implements View {
         addNorthPane();
         addCenterPane();
         addSouthPane();
+        setUndecorated(true);
     }
 
     private void addNorthPane() {
-
+        JPanel pane = new JPanel();
+        pane.setBackground(Color.BLUE);
+        pane.add(new MotionLabel(this));
+        add(pane,BorderLayout.NORTH);
     }
 
     private void addCenterPane() {
         JPanel pane = new JPanel();
         textArea = new JTextArea();
-        int width = W_FRAME -20;
+        int width = W_FRAME -40;
         int height = H_FRAME -20;
         Dimension size = new Dimension(width,height);
         textArea.setPreferredSize(size);
