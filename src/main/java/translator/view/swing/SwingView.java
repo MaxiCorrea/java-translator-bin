@@ -11,7 +11,8 @@ import java.awt.*;
 
 public class SwingView extends JFrame implements View {
 
-    private static final String TITLE_APP = "  Translation of Binary to Text";
+	private static final long serialVersionUID = 1L;
+	private static final String TITLE_APP = "  Translation of Binary to Text";
     private static final int W_FRAME = 900;
     private static final int H_FRAME = 500;
 
